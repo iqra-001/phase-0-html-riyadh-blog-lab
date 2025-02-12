@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="/stylestage-sass/public/style.css">
+</head>
+<body>
+    <main>
+    <nav><center>
+  <h1>
+    GAU student survey </h1>
+</center>
+</nav>
+<p>
+    <i>The form below should be filled by Garissa University students only.</i>
+</p>
+<form action="submitsurvey" method="get">
+    <label for="Name">Name</label>
+    <input type="text" name="Name" id="Name"> <br>
+
+    <label for="Email">Email</label>
+    <input type="text" name="email" id="email"><br>
+
+    <label for="Reg. No">Reg. No</label>
+    <input type="text" name="Reg. No" id="Reg. No"><br>
+    
+    <label for="year of study">Year of study</label>
+    <input type="number" min="1" max="4"    name="year of study" id="year of study">
+<div>
+    <fieldset>
+        
+        <legend> Gender</legend>
+        <input type="radio" name="female" id="gender">
+        <label for="Female">Female</label>
+        <input type="radio" name="male" id="gender">
+        <label for="Male">Male</label>
+    </fieldset>
+</div>
+<div>
+    <label for="extrainfo"> What changes should the institution make:</label><br>
+
+    <textarea id = "extrainfo" name = "extrainfo" row = "S" cols = "50">
+    </textarea> 
+</div>
+<input type="submit" name="submitsurvey" id="submit">
+</form>
+
+
+</main>  
+<footer>
+    <address>
+        <a href="gau.co.ke">gau</a><br>
+
+        <a href="gau@gmail.com">gau@gmail.com</a>
+    </address>
+</footer>
+</body>
+</html>
